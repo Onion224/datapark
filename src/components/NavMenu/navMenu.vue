@@ -1,7 +1,7 @@
 <template>
     <div class="nav-menu">
         <!-- <h1>hello</h1> -->
-        <div class="blur-bg" :style="{ backgroundColor: '#000000', height: '10px' }"></div>
+        <div class="blur-bg"></div>
     </div>
 </template>
 
@@ -10,20 +10,12 @@
 // const { mapState, mapMutations, mapActions } = createNamespacedHelpers("login");
 
 export default {
-  // props: {
-  //   leftNav: {
-  //     default: []
-  //   },
-  //   headBanner: {
-  //     default: []
-  //   },
-  //   menuShow: {
-  //     default: []
-  //   }
-  // }   
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.blur-bg {
+  background-color: #000000;
+  height: 50px;
+}
 </style>
