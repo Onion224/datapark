@@ -4,6 +4,7 @@ import router from './router/index.js'
 import axios from "./utils/http"
 import ElementUI from 'element-ui';
 import iView from 'iview';
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
 

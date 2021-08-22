@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <app-header></app-header>
   </div>
 </template>
@@ -19,4 +19,7 @@ export default {
 
 <style lang="scss">
 @import "../src/style/common";
+@import "../src/style/mixin";
+
+
 </style>
