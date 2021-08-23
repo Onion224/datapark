@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- <nav-menu :leftNav="leftNav" :headBanner="headBanner" :menuShow="menuShow"></nav-menu> -->
-    <nav-menu></nav-menu>
+        <nav-menu></nav-menu>
     </div>
 </template>
 
