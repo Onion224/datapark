@@ -33,7 +33,7 @@
 import AppHeader from "./components/head/header.vue";
 import AppAsider from "./components/Aside/Asider.vue";
 // 测试引入Main
-import Main from "./components/Main/Main.vue";
+import Main from "./pages/Main.vue";
 export default {
   name: "App",
   components: {

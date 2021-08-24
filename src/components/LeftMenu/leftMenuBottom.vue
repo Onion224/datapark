@@ -117,7 +117,7 @@ a {
   width: 17px;
   height: 17px;
   float: left;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 .box-content {
   width: 150px;
