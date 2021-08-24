@@ -4,9 +4,7 @@
       <el-aside width="200px">
         <!-- logo框 -->
         <div class="logo-box">
-            <div class="logo">
-                数据园
-            </div>
+          <div class="logo">数据园</div>
         </div>
         <!-- 分类栏 -->
         <app-asider></app-asider>
@@ -19,7 +17,7 @@
         <el-main>
           <router-view>
             <!-- Main -->
-            <Main/>
+            <Main />
           </router-view>
         </el-main>
         <el-footer>Footer</el-footer>
@@ -35,15 +33,15 @@
 import AppHeader from "./components/head/header.vue";
 import AppAsider from "./components/Aside/Asider.vue";
 // 测试引入Main
-import Main from "./components/Main/Main.vue"
+import Main from "./components/Main/Main.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     AppHeader,
     AppAsider,
-    Main
-  }
-}
+    Main,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -56,21 +54,28 @@ export default {
 .el-header {
   padding-left: 0px !important;
   padding-right: 0px !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 1;
+  // margin-bottom:40px;
 }
-/* 让box里的div上下左右居中 */
+.el-aside {
+  
+}
+/* 让box里的div左右居中 */
 .logo-box {
-    height: 60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* 让logo里的文字上下左右居中 */
 .logo {
-    width: 60px;
-    height: 40px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size: 20px;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 </style>
