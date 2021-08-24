@@ -57,10 +57,27 @@ export default {
   position: sticky !important;
   top: 0;
   z-index: 1;
+  margin-left: 200px;
   // margin-bottom:40px;
 }
 .el-aside {
-  
+  position: fixed !important;
+  // overflow: hidden !important;
+  height: 100%;
+  z-index: 1;
+  width: 200px;
+  // overflow:hidden;
+  border-right: 1px solid #000;
+}
+// 隐藏侧边栏的滚动条
+.el-aside::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+.el-main {
+  margin-left: 200px;
+}
+.el-footer {
+  margin-left: 200px;
 }
 /* 让box里的div左右居中 */
 .logo-box {
