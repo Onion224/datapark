@@ -20,7 +20,10 @@
             <Main />
           </router-view>
         </el-main>
-        <el-footer>Footer</el-footer>
+        <!-- Footer -->
+        <el-footer>
+          <app-footer></app-footer>
+        </el-footer>
       </el-container>
     </el-container>
     <!-- <app-header></app-header> -->
@@ -32,6 +35,7 @@
 // 在Vue中,驼峰式命名在template中用小写+'-'的方式连接,Vue中是不区分大小写的
 import AppHeader from "./components/head/header.vue";
 import AppAsider from "./components/Aside/Asider.vue";
+import AppFooter from "./components/Footer/footer.vue"
 // 测试引入Main
 import Main from "./pages/Main.vue";
 export default {
@@ -39,6 +43,7 @@ export default {
   components: {
     AppHeader,
     AppAsider,
+    AppFooter,
     Main,
   },
 };
@@ -48,6 +53,9 @@ export default {
 @import "../src/style/common";
 @import "../src/style/mixin";
 //用于调式页面布局,调好后将删除
+::v-deep .el-main {
+  border-left: none !important;
+}
 .el-container {
   // border-left: 1px solid !important;
 }
@@ -59,6 +67,7 @@ export default {
   z-index: 1;
   margin-left: 200px;
   // margin-bottom:40px;
+  // border-left:  #d3dce6 1px solid;
 }
 .el-aside {
   position: fixed !important;
@@ -94,5 +103,8 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+}
+.el-footer {
+  background-color: #f5f7f9;
 }
 </style>

@@ -4,6 +4,7 @@
     class="el-menu-vertical-demo"
     @open="handleOpen"
     @close="handleClose"
+    style="border:none"
   >
     <el-menu-item index="1">
       <i class="el-icon-menu"></i>
@@ -46,6 +47,9 @@
 </script>
 
 <style scoped>
+/* ::v-deep .el-menu {
+  border: none !important;
+} */
 span {
   font-weight:normal;
 }
