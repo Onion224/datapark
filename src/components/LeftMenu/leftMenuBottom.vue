@@ -111,7 +111,7 @@ a {
 }
 .recently-view {
   /* 用于调式,之后将删除该样式 */
-  border-top: 1px solid #000;
+  border-top:  #d3dce6 1px solid;
 }
 .datasetscover {
   width: 17px;

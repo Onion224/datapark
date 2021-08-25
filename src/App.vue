@@ -49,7 +49,7 @@ export default {
 @import "../src/style/mixin";
 //用于调式页面布局,调好后将删除
 .el-container {
-  border-left: 1px solid !important;
+  // border-left: 1px solid !important;
 }
 .el-header {
   padding-left: 0px !important;
@@ -67,7 +67,7 @@ export default {
   z-index: 1;
   width: 200px;
   // overflow:hidden;
-  border-right: 1px solid #000;
+  border-right:  #d3dce6 1px solid;
 }
 // 隐藏侧边栏的滚动条
 .el-aside::-webkit-scrollbar {
