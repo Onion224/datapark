@@ -619,15 +619,22 @@
         </div>
       </el-col>
     </el-row>
+    <!-- 分页器 -->
+    <div class="pager">
+      <Pagination/>
+    </div>
   </div>
 </template>
 
 <script>
 // 导入二级导航栏
 // import Tabs from '../components/Tabs/Tabs.vue'
+// 导入分页器
+import Pagination from '../components/Pagination/Pagination.vue'
 export default {
   components: {
     // Tabs
+    Pagination
   },
 };
 </script>
@@ -721,6 +728,9 @@ span {
   margin: 8px;
   // width: 80%;
 }
+.publisher span {
+  font-weight: 800;
+}
 .share-button {
   float: right;
   margin-top: 5px;
@@ -734,6 +744,10 @@ span {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 5px;
+}
+.pager {
+  float: right;
+  margin-top: 30px;
 }
 ::v-deep .grid-content {
   min-height: 170px !important;

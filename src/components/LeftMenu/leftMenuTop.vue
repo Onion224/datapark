@@ -46,5 +46,7 @@
 </script>
 
 <style scoped>
-
+span {
+  font-weight:normal;
+}
 </style>

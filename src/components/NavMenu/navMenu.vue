@@ -78,7 +78,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style/mixin";
-
 .nav-menu {
   background-color: #fff;
   border-bottom: 1px solid rgba(229, 229, 234, 0.3);
@@ -89,6 +88,7 @@ export default {
 .container {
   max-width: 80em !important;
   margin: auto !important;
+  font-weight:normal;
 }
 
 .el-button {
